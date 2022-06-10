@@ -1,8 +1,8 @@
 Tools for SPM
 
-plot_realignment_params.m does exactly that.
+<b>plot_realignment_params.m</b> does exactly that.
 
-spm_spm_lss.m is a fork of spm_spm to quickly do Mumfordian an LS-S analysis from a full
+<b>spm_spm_lss.m</b> is a fork of spm_spm to quickly do Mumfordian an LS-S analysis from a full
 LS-A design matrix. The only thing needed is to add the field SPM.lss_ind to SPM.
 Here all columns for which you want an LSS beta image are numbered confounds are marked 
 with NaN eg [1 2 3 4 5 NaN NaN NaN NaN NaN NaN] for 5 events and 6 motion paraneters
@@ -18,3 +18,7 @@ No changes are made to SPM.mat
 Non-sphericity is performed on the full LS-A model only 
 Best use 'None'.
 Do each session seperately 
+
+<b>make_atlas.m</b> is a tool to convert single probabilistic ROI images to an atlas that can be used within SPM. 
+The example here assembles all images from Brainstem Navigator (https://www.nitrc.org/projects/brainstemnavig/) to an atlas.
+  
